@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Open Sans, sans-serif;
+    background-color: #111827;
+    color: white;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.main {
+    display: flex;
+    background-color: #1f2937;
+    color: white;
+    max-width: 56rem;
+    width: 100%;
+    height: 650px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+
+}
+
+.image {
+    width: 50%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login-side {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 50%;
+    padding: 50px;
+}
+
+label {
+    font-size: 0.875rem;
+    color: #acaeb3;
+    font-weight: 500;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 15px 12px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    background-color: #e7e9eb;
+    border: none;
+    color: black;
+    font-size: 0.875rem;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0px 1px 0px rgb(255, 255, 255);
+}
+
+.form {
+    border-bottom: 1px solid white;
+    margin-bottom: 50px;
+}
+
+.form h1 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    /* font-weight: 800; */
+}
+
+.form button {
+    background-color: #10b981;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #009160;
+}
+
+button {
+    background-color: white;
+    color: #374151;
+    font-size: 1rem;
+    border: none;
+    text-transform: capitalize;
+    transition: all ease 0.2s;
+}
+
+.anchor {
+    display: flex;
+    flex-direction: column;
+}
+
+.anchor a {
+    text-decoration: none;
+    color: #10b981;
+    text-transform: capitalize;
+    font-size: 1rem;
+    padding: 7px;
+    align-items: left;
+    transition: all ease 0.2s;
+
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
+
+.facebook:hover {
+    background-color: rgb(0, 89, 255);
+    cursor: pointer;
+    color: white;
+}
+
+.google:hover {
+    background-color: rgba(255, 0, 0, 0.671);
+    cursor: pointer;
+    color: white;
+}
+
+i {
+    margin-right: 10px;
+}
+
+/* Responsiveness */
+@media screen and (max-width:960px) {
+    .main {
+        max-width: 45rem;
+    }
+}
+
+@media screen and (max-width:769px) {
+    .main {
+        flex-direction: column;
+        max-width: 90%;
+        height: 100%;
+        margin-top: 20px;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .image img {
+        height: 100px;
+    }
+
+    .login-side {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .form button {
+        margin-bottom: 25px;
+    }
+
+}

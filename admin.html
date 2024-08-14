@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h3><i class="fa-solid fa-bag-shopping"></i> Shani's Store</h3>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="container">
+                <div class="user">
+                    <i class="fa-regular fa-moon"></i>
+                    <i class="fa-regular fa-bell"></i>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="nav-bar">
+            <ul class="anchor">
+                <li><a href="" class="active"><i class="fa-solid fa-border-all"></i> dashboard</a></li>
+                <li><a href=""><i class="fa-solid fa-certificate"></i> catalog</a></li>
+                <li><a href=""><i class="fa-solid fa-user-group"></i> customers</a></li>
+                <li><a href=""><i class="fa-brands fa-first-order"></i> orders</a></li>
+                <li><a href=""><i class="fa-regular fa-user"></i> our staff</a></li>
+                <li><a href=""><i class="fa-solid fa-gear"></i> setting</a></li>
+                <li><a href=""><i class="fa-solid fa-earth-americas"></i> international</a></li>
+                <li><a href=""><i class="fa-brands fa-shopify"></i> our Store</a></li>
+                <li><a href=""><i class="fa-regular fa-file"></i> pages</a></li>
+            </ul>
+            <div class="ul-button">
+                <button><i class="fa-solid fa-arrow-right-from-bracket"></i> log out</button>
+            </div>
+        </div>
+
+        <!-- Content  -->
+        <div class="main-container">
+            <div class="heading">
+                <h2>dashboard overview</h2>
+            </div>
+            <div class="grid-box">
+                <div class="sub-grid">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <p class="sub-p">today orders</p>
+                    <h2>$0.00</h2>
+                    <div class="grid-text">
+                        <p>cash:</p>
+                        <p>card:</p>
+                        <p>credit:</p>
+                    </div>
+                    <div class="sales">
+                        <p>$0.00</p>
+                        <p>$0.00</p>
+                        <p>$0.00</p>
+                    </div>
+                </div>
+                <div class="sub-grid yesterday">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <p class="sub-p">yesterday orders</p>
+                    <h2>$4021.33</h2>
+                    <div class="grid-text">
+                        <p>cash:</p>
+                        <p>card:</p>
+                        <p>credit:</p>
+                    </div>
+                    <div class="sales">
+                        <p>$4K+</p>
+                        <p>$0.00</p>
+                        <p>$0.00</p>
+                    </div>
+                </div>
+                <div class="sub-grid month">
+                    <div class="sub-month">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p>this month</p>
+                        <h2>$100234.22</h2>
+                    </div>
+                </div>
+                <div class="sub-grid last-month">
+                    <div class="sub-month">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <p>Last Month</p>
+                        <h2>$19617.22</h2>
+                    </div>
+                </div>
+                <div class="sub-grid all-sales">
+                    <div class="sub-month">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <p>All Time Sales</p>
+                        <h2>$100234.22</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- orders -->
+            <div class="orders-grid">
+                <div class="sub-order">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="sub-order-text">
+                        <p>Total Order</p>
+                        <h2>217</h2>
+                    </div>
+                </div>
+                <div class="sub-order">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    <div class="sub-order-text">
+                        <p>Orders Pending <span>(31323)</span></p>
+                        <h2>54</h2>
+                    </div>
+                </div>
+                <div class="sub-order">
+                    <i class="fa-solid fa-truck"></i>
+                    <div class="sub-order-text">
+                        <p>Orders Processing</p>
+                        <h2>26</h2>
+                    </div>
+                </div>
+                <div class="sub-order">
+                    <i class="fa-solid fa-check"></i>
+                    <div class="sub-order-text">
+                        <p>Orders Delivered</p>
+                        <h2>113</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="scriptJs.js"></script>
+</body>
+
+</html>
