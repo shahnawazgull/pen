@@ -20,6 +20,7 @@ nav {
 .logo {
     display: flex;
     gap: 8rem;
+    align-items: center;
     padding: 10px;
 }
 
@@ -29,28 +30,43 @@ nav {
     align-items: center;
 }
 
+.logo h3 {
+    font-size: 1.6rem;
+    align-items: center;
+}
+
 .container {
     display: flex;
     padding: 10px;
 }
 
+.user img {
+    width: 32px;
+    height: 33px;
+    object-fit: contain;
+    border-radius: 9999px;
+    ;
+}
+
 .user {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
 }
-i{
+
+i {
     cursor: pointer;
 }
+
 .user i {
     padding: 10px;
-    margin-left: 10px;
     color: #0d9e6e;
     font-size: 20px;
 }
 
 .nav-bar {
     display: flex;
+    display: block;
     flex-direction: column;
     height: 100vh;
     padding: 10px;
@@ -59,6 +75,7 @@ i{
 }
 
 .anchor {
+    display: block;
     padding: 20px;
 
 }
@@ -95,25 +112,35 @@ i{
     cursor: pointer;
 }
 
-.ul-button button {
+.ul-button {
     margin-top: 35%;
     margin-left: 20px;
+}
+
+.ul-button a {
+    display: inline-block;
     border: none;
     border-radius: 10px;
     background-color: #0d9e6e;
     width: 80%;
+    /* Adjust width as needed */
     padding: 15px 12px;
     text-transform: capitalize;
     color: white;
     font-size: 1rem;
-    transition: all ease 0.2s;
+    text-align: center;
+    /* Centers the text */
+    text-decoration: none;
+    /* Removes underline */
+    transition: background-color ease 0.2s;
 }
 
 .ul-button i {
-    margin-right: 10px;
+    margin-right: 7px;
 }
 
-.ul-button button:hover {
+/* Hover state for the button */
+.ul-button a:hover {
     background-color: #008055;
     cursor: pointer;
 }
@@ -239,7 +266,8 @@ main {
     padding: 15px;
     border-radius: 50px;
 }
-.sub-order .fa-cart-shopping{
+
+.sub-order .fa-cart-shopping {
     background-color: #fb923c;
 
 }
@@ -253,12 +281,14 @@ main {
     color: #ef4444;
 }
 
-.fa-arrows-rotate{
+.fa-arrows-rotate {
     background-color: #3b82f6;
 }
-.fa-truck{
+
+.fa-truck {
     background-color: #14b8a6;
 }
-.fa-check{
+
+.fa-check {
     background-color: #10b981;
 }
